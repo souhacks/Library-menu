@@ -1,0 +1,55 @@
+print("***********************************")
+print("*         WELCOME TO LMS          *")
+print("***********************************")
+print("*********CHOOSE THE ACTION*********")
+print("""""
+      1) SHOW BOOKS
+      2) ADD BOOKS 
+      3) DELETE BOOKS
+      4) UPDATE BOOKS
+      5) EXIT
+      """"") 
+books = ["c","c++","java"]
+
+op=int(input(" CHOOSE YOUR ACTION "))
+
+if op==1:
+    print("availabele books are ")
+    for book in books:
+        print(book)
+        
+elif op==2:
+    book_name = input("enter the book name")
+    if book_name in books:
+        print( "already present")
+        exit()
+        
+    books.append(book_name)
+    for book in books:
+        print(book)
+        
+    
+elif op==3:
+    book_name1 = input("enter the book you want to delete")
+         
+    books.pop(book_name1)
+    for book in books:
+        print(books)
+ 
+         
+elif op==4:
+    book_name3=input("enter the book name")
+    if book_name3 in books:
+        print("alraedy present")
+        exit()
+    
+    books.update(book_name3)
+    for book in books:
+        print(books)
+      
+        
+    
+elif op==5:
+    print("exit")  
+else:
+    print("you enter wrong option")
