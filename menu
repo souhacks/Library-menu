@@ -32,7 +32,7 @@ elif op==2:
 elif op==3:
     book_name1 = input("enter the book you want to delete")
          
-    books.pop(book_name1)
+    books.remove(book_name1)
     for book in books:
         print(books)
  
